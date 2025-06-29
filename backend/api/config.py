@@ -38,6 +38,7 @@ class APIConfig(BaseModel):
     # AI and ML settings
     openai_api_key: Optional[str] = Field(default=None, description="OpenAI API key")
     google_api_key: Optional[str] = Field(default=None, description="Google API key")
+    duality_api_key: Optional[str] = Field(default=None, description="Duality AI API key")
     
     # Simulation settings
     max_agents: int = Field(default=20, description="Max agents")
@@ -116,6 +117,9 @@ def validate_config(config: APIConfig) -> bool:
     if not config.google_api_key and os.getenv("REQUIRE_GOOGLE", "false").lower() == "true":
         errors.append("Google API key is required but not provided")
     
+    if not config.duality_api_key and os.getenv("REQUIRE_DUALITY", "false").lower() == "true":
+        errors.append("Duality AI API key is required but not provided")
+    
     # Check database connection
     try:
         if config.database_url.startswith("sqlite"):
@@ -164,6 +168,7 @@ REDIS_URL=redis://localhost:6379
 # AI/ML APIs
 OPENAI_API_KEY=your-openai-api-key-here
 GOOGLE_API_KEY=your-google-api-key-here
+DUALITY_API_KEY=your-duality-api-key-here
 
 # Simulation
 MAX_AGENTS=20
