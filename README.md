@@ -283,21 +283,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for the beautiful styling system
 - **Lucide React** for the amazing icons
 
-## 📞 Support
-
-- **Documentation**: [docs.ghostlan.dev](https://docs.ghostlan.dev)
-- **Issues**: [GitHub Issues](https://github.com/your-org/ghostlan/issues)
-- **Discord**: [Join our community](https://discord.gg/ghostlan)
-- **Email**: support@ghostlan.dev
-
 ---
 
 <div align="center">
 
-**Made with ❤️ by the GhostLAN Team**
-
-[![GitHub stars](https://img.shields.io/github/stars/your-org/ghostlan?style=social)](https://github.com/your-org/ghostlan)
-[![GitHub forks](https://img.shields.io/github/forks/your-org/ghostlan?style=social)](https://github.com/your-org/ghostlan)
-[![GitHub issues](https://img.shields.io/github/issues/your-org/ghostlan)](https://github.com/your-org/ghostlan/issues)
+**Made with ❤️ by Cache Money**
 
 </div>
